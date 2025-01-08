@@ -1,0 +1,17 @@
+.tournament-info h1,
+.tournament-info h2,
+.tournament-info h3,
+.tournament-info h4,
+.tournament-info h5,
+.tournament-info h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.tournament-info ul {
+  margin-top: 20px;
+  padding-left: 40px;
+  list-style: disc;
+}

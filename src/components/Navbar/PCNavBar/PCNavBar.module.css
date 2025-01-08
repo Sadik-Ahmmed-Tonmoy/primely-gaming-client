@@ -1,0 +1,56 @@
+/* Navbar.module.css */
+
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.1); /* Light glass effect */
+  }
+
+  /* .dark-mode .navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.4); 
+  } */
+  
+
+.accountButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background: linear-gradient(to right, #7a00be, #7a00be) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s ease-in-out;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .textHoverEffect:hover .text {
+    background-size: 100% 100%;
+    animation: waterFloat 1s infinite;
+  }
+  
+
+  
+  @keyframes waterFloat {
+    0% {
+      text-shadow: 0 0 0 #7a00be;
+    }
+    50% {
+      text-shadow: 0 0 10px #FF06FF;
+    }
+    100% {
+      text-shadow: 0 0 0 #7a00be;
+    }
+  }
+  
